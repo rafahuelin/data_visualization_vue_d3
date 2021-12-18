@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+
+  vue:
+    container_name: vue
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '3000:8080'
+    environment:
+      - CHOKIDAR_USEPOLLING=true
