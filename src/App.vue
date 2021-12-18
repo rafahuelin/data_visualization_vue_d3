@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Chart :coupons="coupons" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Chart from './components/Chart.vue'
+import { coupons } from './assets/json/coupons.json'
+
+console.log(coupons)
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Chart
+  },
+  data() {
+    return {
+      coupons
+    }
   }
 }
 </script>
