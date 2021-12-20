@@ -3,7 +3,7 @@ This project is an interactive Vue and D3.js app that fetches data from a JSON f
 
 This is a dockerized app so you can launch using Docker
 
-![Data Visualization](src/assets/img/data_visualization_sample.png "Data Visualization")
+![Data Visualization](src/assets/img/data_visualization_sample.gif "Data Visualization")
 
 ## Launch with Docker
 ```shell
